@@ -1,0 +1,583 @@
+/* Import Google Font */
+@import url(https://fonts.googleapis.com/css?family=Nunito+Sans);
+
+:root {
+    --main-bg-color: tomato;
+}
+
+/* RESET */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* STYLING */
+.container {
+    display: flex;
+    height: 100vh;
+    background-color: #f4f4f4;
+    color: #a2a2a2;
+    font-family: "Nunito Sans", Arial, Helvetica, sans-serif;
+}
+.darkmode .container {
+    background-color: #1A1B1F;
+    color: #8a8a8a;
+}
+.tabs-container { 
+    width: 540px;
+    max-width: 620px; 
+    min-width: 420px;
+    margin: auto;
+}
+
+/* Style the tabs */
+.tabs {
+    margin-bottom: 28px; 
+    display: flex;
+      justify-content: space-between;
+}
+
+.tabs a {
+    cursor: pointer;
+    padding: 12px 24px;
+    width: 120px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 18px;
+    transition: background 0.1s, color 0.1s;
+    background: linear-gradient(145deg, #ffffff, #dcdcdc);
+    box-shadow:  3px 3px 5px #bebebe, 
+                 -3px -3px 5px #ffffff;
+}
+.darkmode .tabs a {
+    background: linear-gradient(145deg, #1c1d21, #17181c);
+    box-shadow:  3px 3px 6px #101114, 
+                 -3px -3px 6px #24252a;
+}
+
+/* Change background color of tabs on hover */
+.tabs a:hover {
+    background: linear-gradient(145deg, #f4f4f4, #cecece);
+    color: #888;
+}
+.darkmode .tabs a:hover {
+    background: #141414;
+    color: #bbb;
+}
+
+/* Styling for active tab */
+.tabs a.active {
+    background-color: #f4f4f4;
+    color: #bdbdbd;
+    cursor: default;
+    padding: 14px 22px 10px 26px;
+    background: #f4f4f4;
+    box-shadow: inset 3px 3px 5px #cbcbcb, 
+                inset -3px -3px 5px #ffffff;
+}
+.darkmode .tabs a.active {
+    background: #1A1B1F;
+    box-shadow: inset  3px 3px 6px #101114, 
+                inset -3px -3px 6px #24252a; 
+    color: #6a6a6a;
+}
+
+
+/* Style the tab content */
+.tabcontent {
+    padding: 15px;
+    min-height: 288px;
+    display: none;    
+    border-radius: 18px;
+    background: #f4f4f4;
+    box-shadow:  3px 3px 6px #bebebe, 
+                 -3px -3px 6px #ffffff;
+}
+
+.title {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+}
+
+.title-items-1 h1 {
+    width: 100%;
+    color: white;
+    background: var(--main-bg-color);
+}
+
+.pes {
+    height: 120px;
+    width: 120px;
+}
+
+.title-items-2 {
+    text-align: center;
+    font-size: 82px;
+    color: var(--main-bg-color);
+}
+
+.cart {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+}
+
+.cart-1{
+    position: relative;
+    border-right: #888 1px solid;
+}
+
+.cart-2 {
+    position: relative;
+}
+
+.cart-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 0.8s;
+    background-color: #f4f4f4e3;
+    opacity: 0;
+}
+
+.cart-bg:hover {
+    opacity: 1;
+}
+
+.darkmode .cart-bg {
+    background: linear-gradient(145deg, #1c1d21, #17181c);
+    /* background-color: #1A1B1F; */
+}
+
+.cart-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 72px;   
+}
+
+.foto {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: #6a6a6a solid 1px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+}
+
+
+.html-icon {
+    color: var(--main-bg-color);
+}
+
+.css-icon {
+    color: blue;
+}
+
+.js-icon {
+    color:rgb(146, 146, 13);
+}
+
+.php-icon {
+    color: blue;
+}
+
+.node-icon {
+    color: rgb(67, 170, 26);
+}
+
+.database-icon {
+    color: orange;
+}
+
+
+.cart-text {
+    text-align: justify;
+    padding: 10px;
+    font-style: 10px;
+}
+
+.jobs {
+    position: relative;
+    width: 510px;
+    height: 258px;
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+}
+
+.jobs-item {
+    position: relative;
+    width: 255px;
+    height: 180px;
+    padding: 0 10px;
+    outline: none;
+}
+
+.jobs-item:before {
+    content: '';
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    left: 4%;
+    border-top: 5px solid var(--main-bg-color);
+    border-bottom: 5px solid var(--main-bg-color);
+    transition: 0.3s;
+    transform: scaleX(0);
+}
+
+.jobs-item:hover:before {
+    transform: scaleX(1);
+}
+
+.jobs-item:after {
+    content: '';
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    left: 4%;
+    border-left: 5px solid var(--main-bg-color);
+    border-right: 5px solid var(--main-bg-color);
+    transition: 0.3s;
+    transform: scaleY(0);
+}
+
+.jobs-item:hover:after {
+    transform: scaleY(1);
+}
+
+.jobs-item i {
+    position: absolute;
+    top: 39%;
+    left: 43%;
+    z-index: 9999;
+    font-size: 54px;
+    color: var(--main-bg-color);
+    transition: 0.3s;
+    transform: scale(0, 0);
+}
+
+.jobs-item:hover i {
+    transform: scale(1, 1);
+}
+
+.jobs-item img {
+    display: block;
+    width: 245px;
+    height: 190px;
+    outline: none;
+}
+
+.slick-dots {
+    position: absolute;
+    display: inline-flex;
+    bottom: 0;
+
+}
+
+.slick-dots li {
+    list-style: none;
+    margin: 0 10px;
+}
+
+.slick-dots button{
+    font-size: 0;
+    width: 10px;
+    height: 10px;
+    background-color: rgb(78, 78, 78);
+    border: none;
+    border-radius: 50%;
+    outline: none;
+}
+
+.contact {
+    color: #a2a2a2;
+}
+
+.fancybox-content {
+    border-radius: 10px;
+}
+
+.contact-form {
+    width: 300px;
+}
+
+.contact-item {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10%;
+}
+
+.contact-item-cart {
+    width: 190px;
+    text-align: center;
+}
+
+.contact-item-cart i {
+    font-size: 54px;
+    padding-bottom: 15px;
+    color: var(--main-bg-color);
+}
+
+#feedback {
+    display: none;
+}
+
+.input-txt {
+    background: none;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #a2a2a2;
+    font-size: 18px;
+    color: #a2a2a2;
+    margin-bottom: 30px;
+    transition: 0.5s;
+}
+
+.input-txt:focus {
+    border-bottom: 1px solid var(--main-bg-color);
+}
+
+.name {
+     width: 100%;
+}
+
+.mail {
+    width: 100%;
+}
+
+.text {
+    width: 100%;
+    max-height: 75px;
+    min-height: 75px;
+    max-width: 100%;
+    min-width: 100%;
+    outline: none;
+    background: none;
+    border: 1px solid #a2a2a2;
+    resize: none;
+    color: #a2a2a2;
+    font-size: 16px;
+}
+
+.text:focus {
+    border: 1px solid var(--main-bg-color);
+}
+
+.fancybox-button:hover {
+    background-color: var(--main-bg-color);
+    box-shadow:    2px 2px 10px rgb(190, 74, 53), 
+                -2px -2px 10px var(--main-bg-color);
+}
+
+.btn-form {
+    background: none;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    border: 2px solid var(--main-bg-color);
+    margin: 15px 28%;
+    padding: 10px;
+    border-radius: 50px;
+    font-weight: 700;
+    outline: none;
+    color: var(--main-bg-color);
+}
+
+.btn-form:hover {
+    background-color: var(--main-bg-color);
+    box-shadow:    2px 2px 10px rgb(190, 74, 53), 
+                -2px -2px 10px var(--main-bg-color);
+    color: #fff;
+}
+
+.btn-form:active {
+    transform: scale(0.9);
+}
+
+.contact-link {
+    display: inline-block;
+    text-decoration: none;
+    margin-left: 22%;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    border: 2px solid var(--main-bg-color);
+    padding: 15px;
+    margin-top: 20px;
+    color: var(--main-bg-color);
+    transition: 0.5s;
+}
+
+.contact-link:hover {
+    background-color: var(--main-bg-color);
+    box-shadow:    2px 2px 10px rgb(190, 74, 53), 
+                -2px -2px 10px var(--main-bg-color);
+    color: #fff;
+}
+
+.darkmode .contact-link {
+    color: var(--main-bg-color);
+}
+
+.darkmode .contact-link:hover {
+    color: #fff;
+}
+
+.phone-version i {
+    background-color: transparent;
+    margin-left: 46%;
+    font-size: 24px;
+    color: #aa1d1d;
+}
+
+.darkmode .slick-dots li.slick-active button{
+    background-color: transparent;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.slick-dots li.slick-active button{
+    background-color: transparent;
+    border: 1px solid black;
+}
+
+.tabcontent h1{
+    display: inline-block;
+}
+
+.darkmode .tabcontent {
+    background: linear-gradient(145deg, #1c1d21, #17181c);
+    box-shadow:  3px 3px 6px #101114, 
+                 -3px -3px 6px #24252a;
+}
+.content .active {
+    display: block;
+}
+.tabcontent p {
+    margin-bottom: 12px;
+}
+.tabcontent p:last-child {
+    margin-bottom: 0;
+}
+.tabcontent .read-more-link a {
+    color: #626262;
+    text-decoration: none;
+    font-size: 0.85em;
+    font-weight: bold;
+}
+.darkmode .tabcontent .read-more-link a {
+    color: #d4d4d4;
+}
+.icon {
+    padding-left: 8px;
+    font-size: 16px;
+}
+
+/* THE DARKMODE SWITCH */ 
+.dark-mode-switch {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+}
+/* .dark-mode-switch .switch {
+     margin-left: 4px; 
+} */
+.switch-label {
+    cursor: pointer;
+    font-size: 0.85em;
+}
+/* the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 44px;
+    height: 22px;
+    margin-left: 4px;
+}
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #1A1B1F;
+    transition: .2s;
+    box-shadow:  2px 2px 3px #ffffff, 
+                 -2px -2px 3px #bebebe;
+}
+.darkmode .slider {
+    box-shadow:  2px 2px 3px #34353a, 
+                 -2px -2px 3px #000104;
+}
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 3px;
+    bottom: 2px;
+    background: #9294b8;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+input:checked + .slider {
+    background-color: #f4f4f4;
+}
+input:checked + .slider:before {
+    transform: translateX(21px);
+}
+/* Rounded sliders */
+.slider.round {
+    border-radius: 11px;
+}
+.slider.round:before {
+    border-radius: 50%;
+}
+
+
+
+/*==============================*/
+.small-screen {
+    display: none;
+    background-color: #f4f4f4;
+    height: 100vh;
+    color: #a2a2a2;
+    font-family: "Nunito Sans", Arial, Helvetica, sans-serif;
+}
+.darkmode .small-screen {
+    background-color: #1A1B1F; 
+    color: #8a8a8a;
+}
+.small-screen-content {
+    width: 70%;
+    margin: auto;
+}
+@media only screen and (max-width: 600px) {
+    .container {
+        display: none;
+    }
+    .small-screen {
+        display: flex;
+    }
+    .tabcontent {
+        display: block;
+    }
+}

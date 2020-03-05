@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Андрей Вернигоров</title>
+</head>
+<body>
+    <div id="container" class="container">
+        <div id="tabs" class="tabs-container">
+    
+            <div class="tabs">
+                <a id="tab1" data-tab="1" class="tab">Главная</a>
+                <a id="tab2" data-tab="2" class="tab">Работы</a>
+                <a id="tab3" data-tab="3" class="tab">О нас</a>
+                <a id="tab4" data-tab="4" class="tab">Контакты</a>
+            </div>
+    
+            <div class="content">
+                <div id="tabcontent1" data-tab="1" class="tabcontent">                
+                        <div class="title">
+                            <div class="title-items-1">                                
+                                <h1>.pЁs_developer</h1>                              
+                            </div>
+                            <div class="title-items-2">
+                                <i class="fas fa-dog"></i>
+                            </div>
+                        </div>
+                    <div class="lable-text">
+                        <p>Крупнейшая веб-студия на всем районе.</p>
+                        <p>Наша студия профессионально занимается разработкой сайтов любой сложности.</p>
+                        <p>Если у вас есть нереализуемая идея, мы поможем развить ее до проекта, которым будут восхищаться.</p>
+                    </div>
+                </div>
+                <div id="tabcontent2" data-tab="2" class="tabcontent">
+                      <div class="jobs" data-slick='{"slidesToShow": 2, "slidesToScroll": 1}'>
+                          <div class="jobs-item">
+                              <a data-fancybox="gallery" href="img/full/Home.png">
+                                  <img src="img/min/Home.png" alt="">
+                                  <i class="fas fa-search-plus"></i>
+                              </a>
+                          </div>
+                          <div class="jobs-item">
+                            <a data-fancybox="gallery" href="img/full/rosbezopasnost.png">
+                                <img src="img/min/2020-03-02_20-59-09.png" alt="">
+                                <i class="fas fa-search-plus"></i>
+                            </a>
+                        </div>
+                        <div class="jobs-item">
+                            <a data-fancybox="gallery" href="img/full/40763b027f.png">
+                                <img src="img/min/2020-03-02_21-01-53.png" alt="">
+                                <i class="fas fa-search-plus"></i>
+                            </a>
+                        </div>
+                        <div class="jobs-item">
+                            <a data-fancybox="gallery" href="img/full/кресла.png">
+                                <img src="img/min/кресла.png" alt="">
+                                <i class="fas fa-search-plus"></i>
+                            </a>
+                        </div>
+                        <div class="jobs-item">
+                            <a data-fancybox="gallery" href="img/full/кузовной ремон.png">
+                                <img src="img/min/кузовной ремон.png" alt="">
+                                <i class="fas fa-search-plus"></i>
+                            </a>
+                        </div>
+                      </div>
+                </div>
+                <div id="tabcontent3" data-tab="3" class="tabcontent">
+                    <div class="cart">
+                        <div class="cart-1">
+                            <img class="foto" src="img/FaceApp_1582706360604.jpg" alt="Фото">
+                            <p class="cart-text">Этого парня зовут Андрей. Он сделаает так, что бы ваш сайт сверкал как модель на подиуме.</p>
+                            <div class="cart-bg">
+                                <h2>Технологии</h2>                              
+                                <div class="cart-icon">                                   
+                                        <i class="fab fa-html5 html-icon"></i>                       
+                                        <i class="fab fa-css3 css-icon"></i>                                
+                                        <i class="fab fa-js-square js-icon"></i>
+                                </div>                                                            
+                            </div>                            
+                        </div>
+                        <div class="cart-2">
+                            <img class="foto" src="img/ASH_6050.jpg" alt="Фото">
+                            <p class="cart-text" >А это Дмитрий. Есть ощущение что он родился в мезозое? Все верно, он настоящий динозавр по серверной части сайта.</p>
+                            <div class="cart-bg">
+                                <h2>Технологии</h2>                               
+                                <div class="cart-icon">                                    
+                                        <i class="fab fa-php php-icon"></i>                       
+                                        <i class="fab fa-node-js node-icon"></i>                                
+                                        <i class="fas fa-database database-icon"></i>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div id="tabcontent4" data-tab="4" class="tabcontent">
+                    <div class="contact">
+                        <div class="contact-item">
+                            <div class="contact-item-cart">
+                                <i class="fas fa-map-marked-alt"></i>
+                                <p>Ростовская область, г. Таганрог.</p>
+                            </div>
+                            <div class="contact-item-cart">
+                                <i class="fas fa-phone"></i>
+                                <p>+79508568999</p>
+                            </div>
+                            <div class="contact-item-cart">
+                                <i class="fas fa-envelope"></i>
+                                <p>vernigorov.a.a@yandex.ru</p>
+                            </div>
+                        </div>
+                        <div id="feedback">
+                            <div class="contact-form">
+                                <form id="f_contact" action="" method="post">
+                                    <input  class="input-txt name" type="text" placeholder="Ваше имя">
+                                    <input class="input-txt mail" type="email" placeholder="Ваша почта">
+                                    <textarea class="text" name="" id="" cols="30" rows="10" placeholder="Сообщение"></textarea>
+                                    <button id="f_send" class="btn-form">Отправить</button>
+                                </form>
+                            </div>
+                        </div>
+                        <a href="#feedback" rel="nofollow" class="modalbox contact-link">Обратная связь <i class="fas fa-paper-plane"></i></a>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+      
+        <div class="dark-mode-switch">
+            <label class="switch-label" for="dark-mode-switch">Dark mode</label>
+            <label class="switch">
+                <input type="checkbox" id="dark-mode-switch">
+                <span class="slider round"></span>
+            </label>
+        </div>
+      
+    </div>
+    
+    
+    
+    
+    
+    <!-- ---------------------- -->
+    
+    <div class="small-screen">
+        <div class="small-screen-content tabcontent phone-version">
+            <i class="fas fa-skull-crossbones"></i>
+            <p>Дружище извини, мобильной версии сайта нет.</p>
+            <p>Я знаю о чем ты подумал, нет мы можем её сделать.</p>
+            <p>Но проект задумывался именно в таком виде, какой он сейчас есть.</p>
+            <p>Так что переходи в версию для ПК и наслаждайся.</p>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+
+    <!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script> -->
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="https://kit.fontawesome.com/93a99d4398.js" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+    <script src="js/corusel.js"></script>
+    <script src="js/feedback.js"></script>
+</body>
+</html>
